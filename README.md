@@ -1,3 +1,11 @@
+This Fork
+=========
+
+This fork serves a very niche purpose where we have to run certain pieces of code that are run on system Python and cannot be changed in any way. These programs use stdlib-list which doesn't support Python 3.10, and will break when the system Python is updated. Python 3.10 introduced built-in tools for doing the same thing so this fork simply gets the list of modules from sys.stlib_module_names when an unsupported version is encountered.
+
+
+
+
 Python Standard Library List
 ============================
 
